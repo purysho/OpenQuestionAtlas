@@ -1,0 +1,10 @@
+{
+  "datasets": [
+    {
+      "id": "curated",
+      "file": "curated.json",
+      "name": "Curated",
+      "count": 46
+    }
+  ]
+}

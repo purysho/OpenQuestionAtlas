@@ -1,0 +1,554 @@
+[
+  {
+    "id": "curated-0001",
+    "question": "How did life first arise on Earth?",
+    "field": "biology",
+    "description": "No proposed pathway yet explains the full transition from prebiotic chemistry to the first self-sustaining organisms.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in biology",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0002",
+    "question": "What selective forces caused sexual reproduction to evolve?",
+    "field": "biology",
+    "description": "Sex carries major biological costs, and researchers still debate which evolutionary advantages first outweighed them.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in biology",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0003",
+    "question": "How did the first eukaryotic cell originate?",
+    "field": "biology",
+    "description": "The sequence of symbiotic events that joined nuclei, mitochondria, and host cells remains unresolved.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in biology",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0004",
+    "question": "How do cells know what size to reach before dividing?",
+    "field": "biology",
+    "description": "Cells coordinate growth and division reliably, but the mechanisms that set their target size are not fully understood.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in biology",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "obscure"
+  },
+  {
+    "id": "curated-0005",
+    "question": "What is dark matter made of?",
+    "field": "cosmology",
+    "description": "Its gravitational effects are widespread, yet no confirmed particle or alternative explanation accounts for all observations.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in astronomy",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_astronomy",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0006",
+    "question": "What drives the accelerating expansion of the universe?",
+    "field": "cosmology",
+    "description": "Observations imply dark energy, but its physical nature and whether it changes over time remain unknown.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in astronomy",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_astronomy",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0007",
+    "question": "Why does the universe contain more matter than antimatter?",
+    "field": "cosmology",
+    "description": "Known physics does not fully explain how the early universe developed its observed baryon asymmetry.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in astronomy",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_astronomy",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0008",
+    "question": "Is the whole universe finite or infinite?",
+    "field": "cosmology",
+    "description": "Measurements constrain the observable universe, but cannot yet determine the size or topology of everything beyond it.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in astronomy",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_astronomy",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0009",
+    "question": "How can quantum mechanics and gravity be unified?",
+    "field": "physics",
+    "description": "Quantum theory and general relativity both succeed in their domains but conflict under extreme conditions.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in physics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0010",
+    "question": "What happens to information when a black hole evaporates?",
+    "field": "physics",
+    "description": "Hawking radiation appears thermal, creating a conflict between black-hole evaporation and quantum information conservation.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in physics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0011",
+    "question": "Is spacetime fundamentally continuous or discrete?",
+    "field": "physics",
+    "description": "Competing approaches to quantum gravity make different claims about spacetime at the Planck scale.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in physics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0012",
+    "question": "How can physics reconcile its two concepts of time?",
+    "field": "physics",
+    "description": "Quantum mechanics treats time as a fixed parameter while relativity makes it part of dynamic spacetime.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in physics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0013",
+    "question": "What neural mechanisms produce subjective experience?",
+    "field": "neuroscience",
+    "description": "Brain activity correlates with awareness, but no account yet explains how it gives rise to lived experience.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in neuroscience",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0014",
+    "question": "How does the brain bind separate features into one experience?",
+    "field": "neuroscience",
+    "description": "Color, shape, location, and emotion are processed across neural systems yet arrive as a unified percept.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in neuroscience",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0015",
+    "question": "Where are memories stored and how are they retrieved?",
+    "field": "neuroscience",
+    "description": "Multiple brain systems participate in memory, but the precise physical code and retrieval process remain unsettled.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in neuroscience",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0016",
+    "question": "What is the biological function of sleep?",
+    "field": "neuroscience",
+    "description": "Sleep is nearly universal and essential, but no single theory explains all of its restorative and adaptive roles.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in neuroscience",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0017",
+    "question": "Is the Riemann hypothesis true?",
+    "field": "mathematics",
+    "description": "The conjectured locations of the zeta function's nontrivial zeros would tightly govern the distribution of prime numbers.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in mathematics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0018",
+    "question": "Do smooth Navier–Stokes solutions always exist in three dimensions?",
+    "field": "mathematics",
+    "description": "No proof shows whether ordinary initial conditions can develop singularities in the equations governing fluid flow.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in mathematics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0019",
+    "question": "Is the Birch and Swinnerton-Dyer conjecture true?",
+    "field": "mathematics",
+    "description": "The conjecture links rational points on elliptic curves to an analytic function, but the general relation is unproved.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in mathematics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0020",
+    "question": "Which cohomology classes are algebraic, as predicted by the Hodge conjecture?",
+    "field": "mathematics",
+    "description": "A central bridge between topology and algebraic geometry remains unproved for general projective varieties.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in mathematics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0021",
+    "question": "Does P equal NP?",
+    "field": "computer-science",
+    "description": "It is unknown whether every problem whose answer can be checked quickly can also be solved quickly.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in computer science",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0022",
+    "question": "Do one-way functions exist?",
+    "field": "computer-science",
+    "description": "Modern cryptography assumes functions that are easy to compute but hard to reverse, without a general proof they exist.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in computer science",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0023",
+    "question": "Can graph isomorphism be solved in polynomial time?",
+    "field": "computer-science",
+    "description": "The best known general algorithms are fast but do not settle whether this foundational comparison problem lies in P.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in computer science",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0024",
+    "question": "Does linear programming have a strongly polynomial algorithm?",
+    "field": "computer-science",
+    "description": "Existing methods depend on numeric input sizes, and no algorithm is known with a bound based only on dimensions.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in computer science",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "obscure"
+  },
+  {
+    "id": "curated-0025",
+    "question": "What controls the paths and intensity of storm tracks?",
+    "field": "climate-earth",
+    "description": "Interactions among atmospheric circulation, clouds, and ocean conditions still limit predictive climate models.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in geoscience",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_geoscience",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0026",
+    "question": "What determines how many tropical cyclones form?",
+    "field": "climate-earth",
+    "description": "Warm oceans are necessary but do not explain observed storm frequency or how it will respond to climate change.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in geoscience",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_geoscience",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0027",
+    "question": "What is Earth's long-term internal heat balance?",
+    "field": "climate-earth",
+    "description": "The planet's cooling history and the distribution of heat-producing elements inside it remain incompletely constrained.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in geoscience",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_geoscience",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "obscure"
+  },
+  {
+    "id": "curated-0028",
+    "question": "What drives equatorial climate oscillations such as ENSO and the QBO?",
+    "field": "climate-earth",
+    "description": "Researchers still debate how stochastic, chaotic, and forced processes combine to produce these major oscillations.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in geoscience",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_geoscience",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0029",
+    "question": "Can superconductivity work at room temperature and practical pressure?",
+    "field": "chemistry",
+    "description": "Known high-temperature superconductors still require extreme conditions, and a practical material has not been demonstrated.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in chemistry",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_chemistry",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0030",
+    "question": "How do relativistic effects shape the chemistry of trans-actinide elements?",
+    "field": "chemistry",
+    "description": "Spin–orbit coupling and electron interactions become extreme in the heaviest elements and remain hard to predict.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in chemistry",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_chemistry",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "obscure"
+  },
+  {
+    "id": "curated-0031",
+    "question": "Can a lithium–air battery become practically useful?",
+    "field": "chemistry",
+    "description": "Its theoretical energy density is high, but instability, side reactions, and limited cycle life remain unresolved.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in chemistry",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_chemistry",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0032",
+    "question": "Why do biomolecules overwhelmingly share one handedness?",
+    "field": "chemistry",
+    "description": "Life uses strongly preferred molecular chiralities, but their origin and necessity are still disputed.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in chemistry",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_chemistry",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0033",
+    "question": "What turns a justified true belief into knowledge?",
+    "field": "philosophy",
+    "description": "Gettier cases show that truth, belief, and justification can coincide through luck without clearly constituting knowledge.",
+    "source": {
+      "name": "Wikipedia — Philosophical problems",
+      "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0034",
+    "question": "Why is there something rather than nothing?",
+    "field": "philosophy",
+    "description": "Accounts of particular things do not settle why any universe, law, time, or possibility exists at all.",
+    "source": {
+      "name": "Wikipedia — Philosophical problems",
+      "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0035",
+    "question": "How are mind and body related?",
+    "field": "philosophy",
+    "description": "Neither dualist nor physicalist accounts have resolved how subjective mental states relate causally to physical processes.",
+    "source": {
+      "name": "Wikipedia — Philosophical problems",
+      "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0036",
+    "question": "How should luck affect moral responsibility?",
+    "field": "philosophy",
+    "description": "People are judged differently for outcomes and circumstances beyond their control, creating a persistent ethical conflict.",
+    "source": {
+      "name": "Wikipedia — Philosophical problems",
+      "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0037",
+    "question": "What should count as a disease?",
+    "field": "medicine",
+    "description": "Physiological dysfunction, suffering, risk, and cultural judgment do not always agree on the boundary of disease.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in medicine",
+      "url": "https://en.wikipedia.org/wiki/Unsolved_problems_in_medicine",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0038",
+    "question": "How should population evidence guide treatment for one person?",
+    "field": "medicine",
+    "description": "Clinical studies estimate group effects, but translating those averages into reliable individual decisions remains difficult.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in medicine",
+      "url": "https://en.wikipedia.org/wiki/Unsolved_problems_in_medicine",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0039",
+    "question": "How can psychiatric diagnoses become more reliable?",
+    "field": "medicine",
+    "description": "Independent clinicians often disagree on some diagnoses even when using the same symptom-based manuals.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in medicine",
+      "url": "https://en.wikipedia.org/wiki/Unsolved_problems_in_medicine",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0040",
+    "question": "Can mental disorders be classified by their causes?",
+    "field": "medicine",
+    "description": "Psychiatric categories remain organized mainly by symptoms because the causal pathways of many disorders are unknown.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in medicine",
+      "url": "https://en.wikipedia.org/wiki/Unsolved_problems_in_medicine",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0041",
+    "question": "Why have stocks historically returned so much more than bonds?",
+    "field": "economics",
+    "description": "Standard models struggle to explain the scale of the long-run equity premium using plausible attitudes toward risk.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in economics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_economics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0042",
+    "question": "Why do investors value dividend-paying companies differently?",
+    "field": "economics",
+    "description": "No accepted account fully reconciles observed preferences for dividends with theories of equivalent firm value.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in economics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_economics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0043",
+    "question": "Can one useful model capture the full range of human economic biases?",
+    "field": "economics",
+    "description": "Behavioral effects are well documented, but no unified model incorporates them while retaining broad predictive power.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in economics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_economics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  },
+  {
+    "id": "curated-0044",
+    "question": "Does revealed preference really reveal what consumers prefer?",
+    "field": "economics",
+    "description": "Observed choices may not expose a stable ranking when people can afford several options and sequence their consumption.",
+    "source": {
+      "name": "Wikipedia — Unsolved problems in economics",
+      "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_economics",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "obscure"
+  },
+  {
+    "id": "curated-0045",
+    "question": "Can an artificial intelligence possess genuine understanding?",
+    "field": "ai",
+    "description": "Fluent behavior can be produced by computation, but whether any system has intentionality or meaning remains contested.",
+    "source": {
+      "name": "Wikipedia — Philosophical problems",
+      "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "famous"
+  },
+  {
+    "id": "curated-0046",
+    "question": "How can we distinguish intelligent mimicry from machine sentience?",
+    "field": "ai",
+    "description": "Passing behavioral tests may demonstrate convincing imitation without revealing whether a machine has any inner experience.",
+    "source": {
+      "name": "Wikipedia — Philosophical problems",
+      "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
+      "license": "CC BY-SA 4.0"
+    },
+    "notoriety": "known"
+  }
+]

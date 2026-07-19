@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-questions-atlas.github.io/schema/question.json",
+  "title": "Open Questions Atlas question",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "question", "field", "description", "source"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 3,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 8
+    },
+    "field": {
+      "type": "string",
+      "enum": [
+        "biology",
+        "cosmology",
+        "physics",
+        "neuroscience",
+        "mathematics",
+        "computer-science",
+        "climate-earth",
+        "chemistry",
+        "philosophy",
+        "medicine",
+        "economics",
+        "ai"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 12
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url", "license"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "license": {
+          "type": "string",
+          "minLength": 2
+        }
+      }
+    },
+    "notoriety": {
+      "type": "string",
+      "enum": ["famous", "known", "obscure"]
+    }
+  }
+}
