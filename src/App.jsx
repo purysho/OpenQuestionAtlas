@@ -1,13 +1,15 @@
 import React, { useEffect, useMemo, useState } from "react";
+import FieldChips from "./components/FieldChips.jsx";
 import QuestionCard from "./components/QuestionCard.jsx";
 import SearchBar from "./components/SearchBar.jsx";
-import { searchQuestions } from "./lib/discovery.js";
+import { filterByFields, searchQuestions } from "./lib/discovery.js";
 import { loadQuestions } from "./lib/loader.js";
 
 export default function App() {
   const [questions, setQuestions] = useState([]);
   const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
+  const [selectedFields, setSelectedFields] = useState([]);
   const [loadState, setLoadState] = useState("loading");
 
   useEffect(() => {
@@ -36,13 +38,23 @@ export default function App() {
 
   const results = useMemo(
     () =>
-      debouncedQuery.trim()
-        ? searchQuestions(questions, debouncedQuery)
-        : [],
-    [debouncedQuery, questions],
+      searchQuestions(
+        filterByFields(questions, selectedFields),
+        debouncedQuery,
+      ),
+    [debouncedQuery, questions, selectedFields],
   );
 
   const searching = query !== debouncedQuery;
+  const hasActiveFilters = Boolean(query.trim() || selectedFields.length);
+
+  function toggleField(field) {
+    setSelectedFields((current) =>
+      current.includes(field)
+        ? current.filter((value) => value !== field)
+        : [...current, field],
+    );
+  }
 
   return (
     <main className="atlas-shell px-5 sm:px-8">
@@ -58,6 +70,11 @@ export default function App() {
             disabled={loadState !== "ready"}
             onChange={setQuery}
             value={query}
+          />
+          <FieldChips
+            disabled={loadState !== "ready"}
+            onToggle={toggleField}
+            selected={selectedFields}
           />
         </div>
 
@@ -78,7 +95,7 @@ export default function App() {
             </p>
           ) : null}
 
-          {loadState === "ready" && !query.trim() ? (
+          {loadState === "ready" && !hasActiveFilters ? (
             <div
               aria-labelledby="welcome-title"
               className="flex w-full max-w-3xl flex-col items-center border-y border-[#d7cbb5]/20 py-16 text-center sm:py-20"
@@ -99,7 +116,7 @@ export default function App() {
             </div>
           ) : null}
 
-          {loadState === "ready" && query.trim() && !searching ? (
+          {loadState === "ready" && hasActiveFilters && !searching ? (
             <div className="grid w-full gap-8 pb-16">
               <h2 className="sr-only">Question results</h2>
               {results.length ? (
@@ -114,7 +131,7 @@ export default function App() {
             </div>
           ) : null}
 
-          {loadState === "ready" && query.trim() && searching ? (
+          {loadState === "ready" && hasActiveFilters && searching ? (
             <p className="py-20 font-sans text-sm text-[#9eb0ba]">
               Searching the atlas…
             </p>

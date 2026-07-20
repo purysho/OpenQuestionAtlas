@@ -73,6 +73,39 @@ const styles = String.raw`
     box-shadow: 0 0 0 3px rgba(103, 215, 220, .2), 0 1rem 3rem rgba(0, 8, 18, .28);
   }
 
+  .field-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    border: 1px solid rgba(181, 190, 190, .48);
+    border-radius: 999px;
+    padding: .55rem .9rem;
+    background: rgba(5, 24, 40, .52);
+    color: #c5cdd0;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: .8rem;
+    line-height: 1;
+    transition: border-color 150ms ease, color 150ms ease, background 150ms ease, box-shadow 150ms ease;
+  }
+
+  .field-chip:hover:not(:disabled) {
+    border-color: rgba(103, 215, 220, .72);
+    color: #f2eee5;
+  }
+
+  .field-chip:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(103, 215, 220, .22);
+  }
+
+  .field-chip-selected {
+    border-color: #67d7dc;
+    background: rgba(30, 129, 145, .28);
+    color: #a3edf0;
+  }
+
+  .field-chip:disabled { cursor: wait; opacity: .55; }
+
   .question-card {
     position: relative;
     border: 1px solid rgba(215, 203, 181, .38);
