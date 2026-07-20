@@ -1,8 +1,13 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import FieldChips from "./components/FieldChips.jsx";
 import QuestionCard from "./components/QuestionCard.jsx";
 import SearchBar from "./components/SearchBar.jsx";
-import { filterByFields, searchQuestions } from "./lib/discovery.js";
+import SurpriseButton from "./components/SurpriseButton.jsx";
+import {
+  filterByFields,
+  pickSurprise,
+  searchQuestions,
+} from "./lib/discovery.js";
 import { loadQuestions } from "./lib/loader.js";
 
 export default function App() {
@@ -10,7 +15,10 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [selectedFields, setSelectedFields] = useState([]);
+  const [surpriseQuestion, setSurpriseQuestion] = useState(null);
+  const [surpriseVersion, setSurpriseVersion] = useState(0);
   const [loadState, setLoadState] = useState("loading");
+  const seenQuestionIds = useRef(new Set());
 
   useEffect(() => {
     let active = true;
@@ -48,12 +56,25 @@ export default function App() {
   const searching = query !== debouncedQuery;
   const hasActiveFilters = Boolean(query.trim() || selectedFields.length);
 
+  function updateQuery(value) {
+    setQuery(value);
+    setSurpriseQuestion(null);
+  }
+
   function toggleField(field) {
     setSelectedFields((current) =>
       current.includes(field)
         ? current.filter((value) => value !== field)
         : [...current, field],
     );
+    setSurpriseQuestion(null);
+  }
+
+  function showSurprise() {
+    const next = pickSurprise(results, seenQuestionIds.current);
+    seenQuestionIds.current = next.seenIds;
+    setSurpriseQuestion(next.question);
+    setSurpriseVersion((current) => current + 1);
   }
 
   return (
@@ -68,7 +89,7 @@ export default function App() {
         <div className="mt-12 w-full max-w-4xl sm:mt-14">
           <SearchBar
             disabled={loadState !== "ready"}
-            onChange={setQuery}
+            onChange={updateQuery}
             value={query}
           />
           <FieldChips
@@ -76,6 +97,14 @@ export default function App() {
             onToggle={toggleField}
             selected={selectedFields}
           />
+          <div className="mt-7 flex justify-center">
+            <SurpriseButton
+              disabled={
+                loadState !== "ready" || searching || results.length === 0
+              }
+              onClick={showSurprise}
+            />
+          </div>
         </div>
 
         <section
@@ -95,7 +124,7 @@ export default function App() {
             </p>
           ) : null}
 
-          {loadState === "ready" && !hasActiveFilters ? (
+          {loadState === "ready" && !hasActiveFilters && !surpriseQuestion ? (
             <div
               aria-labelledby="welcome-title"
               className="flex w-full max-w-3xl flex-col items-center border-y border-[#d7cbb5]/20 py-16 text-center sm:py-20"
@@ -116,10 +145,19 @@ export default function App() {
             </div>
           ) : null}
 
-          {loadState === "ready" && hasActiveFilters && !searching ? (
+          {loadState === "ready" &&
+          (hasActiveFilters || surpriseQuestion) &&
+          !searching ? (
             <div className="grid w-full gap-8 pb-16">
               <h2 className="sr-only">Question results</h2>
-              {results.length ? (
+              {surpriseQuestion ? (
+                <div
+                  className="question-settle"
+                  key={surpriseVersion}
+                >
+                  <QuestionCard question={surpriseQuestion} />
+                </div>
+              ) : results.length ? (
                 results.map((question) => (
                   <QuestionCard key={question.id} question={question} />
                 ))
