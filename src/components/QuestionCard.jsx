@@ -17,6 +17,9 @@ const FIELD_LABELS = {
 };
 
 export default function QuestionCard({ question, related = [], onExplore }) {
+  const shareUrl = new URL(window.location.href);
+  shareUrl.search = new URLSearchParams({ question: question.id }).toString();
+
   return (
     <article className="question-card mx-auto w-full max-w-4xl px-6 py-12 text-center sm:px-12 sm:py-16">
       <p className="font-sans text-xs uppercase tracking-[0.24em] text-[#67d7dc]">
@@ -48,6 +51,9 @@ export default function QuestionCard({ question, related = [], onExplore }) {
       <p className="mt-7 font-serif text-sm text-[#8f9da5]">
         {question.source.name}{question.notoriety ? " · " + question.notoriety + " question" : ""}
       </p>
+      <a className="mt-5 inline-flex font-sans text-xs uppercase tracking-[0.16em] text-[#aab8c0] underline decoration-[#aab8c0]/35 underline-offset-4 hover:text-[#e8eceb]" href={shareUrl.toString()}>
+        Share this question ↗
+      </a>
       {onExplore ? <RelatedQuestions onExplore={onExplore} questions={related} /> : null}
     </article>
   );
