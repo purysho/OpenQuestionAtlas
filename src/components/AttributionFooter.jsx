@@ -19,6 +19,13 @@ export default function AttributionFooter() {
       >
         Sources &amp; data licenses
       </a>
+      <span aria-hidden="true"> · </span>
+      <a
+        className="text-[#b4c7cf] underline decoration-[#b4c7cf]/35 underline-offset-4 hover:text-[#e8eceb] focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#67d7dc]"
+        href={import.meta.env.BASE_URL + "CONTRIBUTING.md"}
+      >
+        Help map the unknown
+      </a>
     </footer>
   );
 }

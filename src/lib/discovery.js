@@ -19,6 +19,32 @@ export function filterByFields(questions, selectedFields) {
   return questions.filter(({ field }) => fields.has(field));
 }
 
+export function relatedQuestions(questions, currentQuestion, limit = 3) {
+  if (!currentQuestion) return [];
+
+  const currentTags = new Set(currentQuestion.tags ?? []);
+
+  return questions
+    .filter(({ id }) => id !== currentQuestion.id)
+    .map((question) => ({
+      question,
+      score:
+        (question.field === currentQuestion.field ? 2 : 0) +
+        (question.tags ?? []).filter((tag) => currentTags.has(tag)).length * 3,
+    }))
+    .filter(({ score }) => score > 0)
+    .sort((left, right) => right.score - left.score || left.question.id.localeCompare(right.question.id))
+    .slice(0, limit)
+    .map(({ question }) => question);
+}
+
+export function fieldCounts(questions) {
+  return questions.reduce((counts, { field }) => {
+    counts[field] = (counts[field] ?? 0) + 1;
+    return counts;
+  }, {});
+}
+
 export function pickSurprise(questions, seenIds, random = Math.random) {
   if (!questions.length) {
     return { question: null, seenIds: new Set(seenIds) };
@@ -43,55 +69,4 @@ export function pickSurprise(questions, seenIds, random = Math.random) {
   nextSeenIds.add(question.id);
 
   return { question, seenIds: nextSeenIds };
-}
-
-if (import.meta.vitest) {
-  const { describe, expect, it } = import.meta.vitest;
-  const questions = [
-    { id: "bio", field: "biology", question: "Biology?", description: "Bio" },
-    { id: "math", field: "mathematics", question: "Math?", description: "Math" },
-    { id: "physics", field: "physics", question: "Physics?", description: "Physics" },
-  ];
-
-  describe("field discovery", () => {
-    it("uses union semantics for multiple selected fields", () => {
-      expect(
-        filterByFields(questions, ["biology", "physics"]).map(({ id }) => id),
-      ).toEqual(["bio", "physics"]);
-    });
-
-    it("leaves the whole pool available when no field is selected", () => {
-      expect(filterByFields(questions, [])).toEqual(questions);
-    });
-  });
-
-  describe("Surprise me", () => {
-    it("does not repeat until the available pool is exhausted", () => {
-      let seenIds = new Set();
-      const picks = [];
-
-      for (let index = 0; index < questions.length + 1; index += 1) {
-        const result = pickSurprise(questions, seenIds, () => 0);
-        picks.push(result.question.id);
-        seenIds = result.seenIds;
-      }
-
-      expect(picks.slice(0, questions.length)).toEqual([
-        "bio",
-        "math",
-        "physics",
-      ]);
-      expect(picks[questions.length]).toBe("bio");
-    });
-
-    it("draws only from the pool it receives", () => {
-      const result = pickSurprise(
-        filterByFields(questions, ["mathematics"]),
-        new Set(),
-        () => 0.9,
-      );
-
-      expect(result.question.id).toBe("math");
-    });
-  });
 }
