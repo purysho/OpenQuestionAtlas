@@ -15,6 +15,8 @@ import {
   searchQuestions,
 } from "./lib/discovery.js";
 import { loadQuestions } from "./lib/loader.js";
+import { FEATURED_QUESTION_ID } from "./lib/featured.js";
+import { readSharedSelection, selectionUrl } from "./lib/share.js";
 import { questionsForTrail, TRAILS } from "./lib/trails.js";
 
 export default function App() {
@@ -36,6 +38,12 @@ export default function App() {
       .then((loadedQuestions) => {
         if (!active) return;
         setQuestions(loadedQuestions);
+        const shared = readSharedSelection(window.location.search);
+        const sharedTrail = TRAILS.find(({ id }) => id === shared.trailId);
+        const sharedQuestion = loadedQuestions.find(({ id }) => id === shared.questionId);
+
+        if (sharedTrail) setActiveTrail(sharedTrail);
+        if (sharedQuestion) setSurpriseQuestion(sharedQuestion);
         setLoadState("ready");
       })
       .catch((error) => {
@@ -71,14 +79,23 @@ export default function App() {
     () => relatedQuestions(questions, surpriseQuestion),
     [questions, surpriseQuestion],
   );
+  const featuredQuestion = useMemo(
+    () => questions.find(({ id }) => id === FEATURED_QUESTION_ID),
+    [questions],
+  );
 
   const searching = query !== debouncedQuery;
   const hasActiveFilters = Boolean(query.trim() || selectedFields.length || activeTrail);
+
+  function updateSharedSelection(selection) {
+    window.history.replaceState({}, "", selectionUrl(window.location, selection));
+  }
 
   function updateQuery(value) {
     setQuery(value);
     setSurpriseQuestion(null);
     setActiveTrail(null);
+    updateSharedSelection({});
   }
 
   function toggleField(field) {
@@ -89,6 +106,7 @@ export default function App() {
     );
     setSurpriseQuestion(null);
     setActiveTrail(null);
+    updateSharedSelection({});
   }
 
   function showSurprise() {
@@ -97,11 +115,13 @@ export default function App() {
     setSeenCount(next.seenIds.size);
     setSurpriseQuestion(next.question);
     setSurpriseVersion((current) => current + 1);
+    updateSharedSelection({ questionId: next.question?.id });
   }
 
   function showQuestion(question) {
     setSurpriseQuestion(question);
     setSurpriseVersion((current) => current + 1);
+    updateSharedSelection({ questionId: question.id });
   }
 
   function chooseField(field) {
@@ -109,6 +129,7 @@ export default function App() {
     setQuery("");
     setActiveTrail(null);
     setSurpriseQuestion(null);
+    updateSharedSelection({});
   }
 
   function chooseTrail(trail) {
@@ -116,6 +137,7 @@ export default function App() {
     setQuery("");
     setSelectedFields([]);
     setSurpriseQuestion(null);
+    updateSharedSelection({ trailId: trail.id });
   }
 
   function clearDiscovery() {
@@ -123,6 +145,7 @@ export default function App() {
     setSelectedFields([]);
     setSurpriseQuestion(null);
     setActiveTrail(null);
+    updateSharedSelection({});
   }
 
   return (
@@ -199,6 +222,14 @@ export default function App() {
               </div>
               <FieldAtlas counts={counts} disabled={loadState !== "ready"} onSelect={chooseField} />
               <TrailPicker onChoose={chooseTrail} trails={TRAILS} />
+              {featuredQuestion ? (
+                <button className="featured-question mt-10 w-full text-left" onClick={() => showQuestion(featuredQuestion)} type="button">
+                  <span className="font-sans text-xs uppercase tracking-[0.22em] text-[#67d7dc]">Question of the week</span>
+                  <span className="mt-3 block font-serif text-2xl leading-tight text-[#f0eadf] sm:text-3xl">{featuredQuestion.question}</span>
+                  <span className="mt-3 block font-sans text-sm leading-6 text-[#aab8c0]">{featuredQuestion.description}</span>
+                  <span className="mt-5 block font-sans text-xs uppercase tracking-[0.16em] text-[#67d7dc]">Enter this question →</span>
+                </button>
+              ) : null}
             </div>
           ) : null}
 

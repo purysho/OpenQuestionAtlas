@@ -1,0 +1,49 @@
+name: Add a sourced open question
+description: Propose a single, verifiable question for the atlas.
+title: "Question: "
+labels: ["curation", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping map the unknown. Please propose only material you can trace to an approved source.
+  - type: input
+    id: question
+    attributes:
+      label: Open question
+      placeholder: What remains unknown?
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: Field
+      options:
+        - biology
+        - cosmology
+        - physics
+        - neuroscience
+        - mathematics
+        - computer-science
+        - climate-earth
+        - chemistry
+        - philosophy
+        - medicine
+        - economics
+        - ai
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source and license
+      description: Include the specific HTTPS URL, source name, and applicable license.
+    validations:
+      required: true
+  - type: textarea
+    id: why-open
+    attributes:
+      label: Why is it still open?
+      description: Give a concise, independently phrased explanation.
+    validations:
+      required: true

@@ -208,6 +208,16 @@ const styles = String.raw`
     text-transform: uppercase;
   }
 
+  .featured-question {
+    border: 1px solid rgba(103, 215, 220, .32);
+    padding: 1.5rem;
+    background: linear-gradient(120deg, rgba(19, 72, 91, .42), rgba(5, 24, 40, .5));
+    transition: transform 160ms ease, border-color 160ms ease;
+  }
+
+  .featured-question:hover { border-color: rgba(103, 215, 220, .78); transform: translateY(-2px); }
+  .featured-question:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(103, 215, 220, .25); }
+
   .question-card {
     position: relative;
     border: 1px solid rgba(215, 203, 181, .38);
@@ -248,7 +258,8 @@ const styles = String.raw`
   .skip-link { transition: none; }
   .atlas-region,
   .trail-card,
-  .related-question { transition: none; }
+  .related-question,
+  .featured-question { transition: none; }
 }
 `;
 
