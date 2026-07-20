@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { defineConfig } from "vite";
 import tailwindcss from "tailwindcss";
 
@@ -178,6 +179,34 @@ const styles = String.raw`
 }
 `;
 
+function licensesAssetPlugin() {
+  const source = readFileSync(new URL("./LICENSES.md", import.meta.url), "utf8");
+
+  return {
+    name: "atlas-data-licenses",
+    configureServer(server) {
+      server.middlewares.use((request, response, next) => {
+        const pathname = request.url?.split("?", 1)[0];
+
+        if (
+          pathname !== "/LICENSES.md" &&
+          pathname !== "/open-questions-atlas/LICENSES.md"
+        ) {
+          next();
+          return;
+        }
+
+        response.statusCode = 200;
+        response.setHeader("Content-Type", "text/markdown; charset=utf-8");
+        response.end(source);
+      });
+    },
+    generateBundle() {
+      this.emitFile({ type: "asset", fileName: "LICENSES.md", source });
+    },
+  };
+}
+
 export default defineConfig({
   base: "/open-questions-atlas/",
   plugins: [
@@ -190,6 +219,7 @@ export default defineConfig({
         return id === resolvedStylesId ? styles : null;
       },
     },
+    licensesAssetPlugin(),
   ],
   css: {
     postcss: {

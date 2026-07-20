@@ -1,4 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import AttributionFooter from "./components/AttributionFooter.jsx";
+import EmptyState from "./components/EmptyState.jsx";
 import FieldChips from "./components/FieldChips.jsx";
 import QuestionCard from "./components/QuestionCard.jsx";
 import SearchBar from "./components/SearchBar.jsx";
@@ -75,6 +77,12 @@ export default function App() {
     seenQuestionIds.current = next.seenIds;
     setSurpriseQuestion(next.question);
     setSurpriseVersion((current) => current + 1);
+  }
+
+  function clearDiscovery() {
+    setQuery("");
+    setSelectedFields([]);
+    setSurpriseQuestion(null);
   }
 
   return (
@@ -162,9 +170,7 @@ export default function App() {
                   <QuestionCard key={question.id} question={question} />
                 ))
               ) : (
-                <p className="py-20 text-center font-sans text-sm text-[#9eb0ba]">
-                  No mapped questions match that search.
-                </p>
+                <EmptyState onReset={clearDiscovery} />
               )}
             </div>
           ) : null}
@@ -176,9 +182,7 @@ export default function App() {
           ) : null}
         </section>
 
-        <p className="py-8 font-sans text-xs tracking-wide text-[#8d9eaa]">
-          The atlas is still being charted.
-        </p>
+        <AttributionFooter />
       </div>
     </main>
   );
