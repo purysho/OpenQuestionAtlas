@@ -4,26 +4,11 @@ The Open Questions Atlas is a static, searchable map of questions humanity has
 not answered yet. Search by phrase, combine fields, or choose **Surprise me** to
 let a non-repeating question find you.
 
+Live site: [purysho.github.io/open-question-atlas](https://purysho.github.io/open-question-atlas/)
+
 ## Interface preview
 
-```text
-                 The Open Questions Atlas
-
-        ┌─────────────────────────────────────┐
-        │ Search open questions               │
-        └─────────────────────────────────────┘
-        [ Biology ] [ Physics ] [ Philosophy ] …
-
-                     Surprise me
-
-             What remains unexplained?
-       Why it is open, with a path to the source.
-```
-
-The finished interface uses a responsive, keyboard-accessible dark star-chart
-layout. The repository intentionally keeps only the files in the architecture
-defined by `AGENTS.md`, so the preview is represented here without adding a
-separate image asset.
+![The Open Questions Atlas interface preview](docs/interface-preview.png)
 
 ## Quick start
 
