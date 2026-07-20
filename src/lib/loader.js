@@ -112,6 +112,21 @@ export function hasApprovedSource(sourceUrl) {
   }
 }
 
+export function hasWikipediaRabbitHole(rabbitHoleUrl) {
+  try {
+    const url = new URL(rabbitHoleUrl);
+    const hostname = url.hostname.toLowerCase();
+
+    return (
+      url.protocol === "https:" &&
+      hostname === "en.wikipedia.org" &&
+      url.pathname.startsWith("/wiki/")
+    );
+  } catch {
+    return false;
+  }
+}
+
 function warn(logger, message) {
   logger?.warn?.("[atlas loader] " + message);
 }
@@ -156,6 +171,11 @@ async function loadDataset(dataset, options) {
 
       if (!hasApprovedSource(entry.source.url)) {
         warn(logger, dataset.id + " dropped unsourced " + label);
+        continue;
+      }
+
+      if (!hasWikipediaRabbitHole(entry.rabbitHole.url)) {
+        warn(logger, dataset.id + " dropped non-Wikipedia rabbit hole " + label);
         continue;
       }
 
@@ -218,6 +238,10 @@ if (import.meta.vitest) {
       url: "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
       license: "CC BY-SA 4.0",
     },
+    rabbitHole: {
+      name: "Wikipedia — Origin of life",
+      url: "https://en.wikipedia.org/wiki/Origin_of_life",
+    },
   };
 
   async function readShippedData() {
@@ -250,6 +274,10 @@ if (import.meta.vitest) {
           return [entry.id + ": unapproved source"];
         }
 
+        if (!hasWikipediaRabbitHole(entry.rabbitHole.url)) {
+          return [entry.id + ": non-Wikipedia rabbit hole"];
+        }
+
         return [];
       });
 
@@ -280,6 +308,14 @@ if (import.meta.vitest) {
           license: "CC BY-SA 4.0",
         },
       };
+      const nonWikipediaRabbitHole = {
+        ...validFixture,
+        id: "curated-9005",
+        rabbitHole: {
+          name: "Not Wikipedia",
+          url: "https://example.com/rabbit-hole",
+        },
+      };
       const payloads = new Map([
         [
           "/data/index.json",
@@ -293,7 +329,10 @@ if (import.meta.vitest) {
         ],
         ["/data/schema.json", schema],
         ["/data/first.json", [validFixture, invalid]],
-        ["/data/second.json", [validFixture, secondValid, unsourced]],
+        [
+          "/data/second.json",
+          [validFixture, secondValid, unsourced, nonWikipediaRabbitHole],
+        ],
       ]);
       const warnings = [];
       const fetchFn = async (url) => {
@@ -323,6 +362,9 @@ if (import.meta.vitest) {
       expect(warnings.some((message) => message.includes("dropped unsourced"))).toBe(
         true,
       );
+      expect(
+        warnings.some((message) => message.includes("non-Wikipedia rabbit hole")),
+      ).toBe(true);
       expect(warnings.some((message) => message.includes("duplicate id"))).toBe(true);
       expect(warnings.some((message) => message.includes("could not be loaded"))).toBe(
         true,

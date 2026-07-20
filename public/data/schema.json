@@ -4,7 +4,7 @@
   "title": "Open Questions Atlas question",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "question", "field", "description", "source"],
+  "required": ["id", "question", "field", "description", "source", "rabbitHole"],
   "properties": {
     "id": {
       "type": "string",
@@ -53,6 +53,22 @@
         "license": {
           "type": "string",
           "minLength": 2
+        }
+      }
+    },
+    "rabbitHole": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
         }
       }
     },

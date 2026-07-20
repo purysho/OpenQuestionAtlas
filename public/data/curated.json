@@ -9,7 +9,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Origin of life",
+      "url": "https://en.wikipedia.org/wiki/Origin_of_life"
+    }
   },
   {
     "id": "curated-0002",
@@ -21,7 +25,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Evolution of sexual reproduction",
+      "url": "https://en.wikipedia.org/wiki/Evolution_of_sexual_reproduction"
+    }
   },
   {
     "id": "curated-0003",
@@ -33,7 +41,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Eukaryote",
+      "url": "https://en.wikipedia.org/wiki/Eukaryote"
+    }
   },
   {
     "id": "curated-0004",
@@ -45,7 +57,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "obscure"
+    "notoriety": "obscure",
+    "rabbitHole": {
+      "name": "Wikipedia - Cell growth",
+      "url": "https://en.wikipedia.org/wiki/Cell_growth"
+    }
   },
   {
     "id": "curated-0005",
@@ -57,7 +73,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_astronomy",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Dark matter",
+      "url": "https://en.wikipedia.org/wiki/Dark_matter"
+    }
   },
   {
     "id": "curated-0006",
@@ -69,7 +89,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_astronomy",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Dark energy",
+      "url": "https://en.wikipedia.org/wiki/Dark_energy"
+    }
   },
   {
     "id": "curated-0007",
@@ -81,7 +105,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_astronomy",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Baryon asymmetry",
+      "url": "https://en.wikipedia.org/wiki/Baryon_asymmetry"
+    }
   },
   {
     "id": "curated-0008",
@@ -93,7 +121,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_astronomy",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Shape of the universe",
+      "url": "https://en.wikipedia.org/wiki/Shape_of_the_universe"
+    }
   },
   {
     "id": "curated-0009",
@@ -105,7 +137,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Quantum gravity",
+      "url": "https://en.wikipedia.org/wiki/Quantum_gravity"
+    }
   },
   {
     "id": "curated-0010",
@@ -117,7 +153,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Black hole information paradox",
+      "url": "https://en.wikipedia.org/wiki/Black_hole_information_paradox"
+    }
   },
   {
     "id": "curated-0011",
@@ -129,7 +169,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Quantum gravity",
+      "url": "https://en.wikipedia.org/wiki/Quantum_gravity"
+    }
   },
   {
     "id": "curated-0012",
@@ -141,7 +185,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Problem of time",
+      "url": "https://en.wikipedia.org/wiki/Problem_of_time"
+    }
   },
   {
     "id": "curated-0013",
@@ -153,7 +201,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Neural correlates of consciousness",
+      "url": "https://en.wikipedia.org/wiki/Neural_correlates_of_consciousness"
+    }
   },
   {
     "id": "curated-0014",
@@ -165,7 +217,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Binding problem",
+      "url": "https://en.wikipedia.org/wiki/Binding_problem"
+    }
   },
   {
     "id": "curated-0015",
@@ -177,7 +233,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Memory",
+      "url": "https://en.wikipedia.org/wiki/Memory"
+    }
   },
   {
     "id": "curated-0016",
@@ -189,7 +249,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep"
+    }
   },
   {
     "id": "curated-0017",
@@ -201,7 +265,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Riemann hypothesis",
+      "url": "https://en.wikipedia.org/wiki/Riemann_hypothesis"
+    }
   },
   {
     "id": "curated-0018",
@@ -213,7 +281,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Navier-Stokes existence and smoothness",
+      "url": "https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_existence_and_smoothness"
+    }
   },
   {
     "id": "curated-0019",
@@ -225,7 +297,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Birch and Swinnerton-Dyer conjecture",
+      "url": "https://en.wikipedia.org/wiki/Birch_and_Swinnerton-Dyer_conjecture"
+    }
   },
   {
     "id": "curated-0020",
@@ -237,7 +313,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Hodge conjecture",
+      "url": "https://en.wikipedia.org/wiki/Hodge_conjecture"
+    }
   },
   {
     "id": "curated-0021",
@@ -249,7 +329,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - P versus NP problem",
+      "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem"
+    }
   },
   {
     "id": "curated-0022",
@@ -261,7 +345,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - One-way function",
+      "url": "https://en.wikipedia.org/wiki/One-way_function"
+    }
   },
   {
     "id": "curated-0023",
@@ -273,7 +361,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Graph isomorphism problem",
+      "url": "https://en.wikipedia.org/wiki/Graph_isomorphism_problem"
+    }
   },
   {
     "id": "curated-0024",
@@ -285,7 +377,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "obscure"
+    "notoriety": "obscure",
+    "rabbitHole": {
+      "name": "Wikipedia - Linear programming",
+      "url": "https://en.wikipedia.org/wiki/Linear_programming"
+    }
   },
   {
     "id": "curated-0025",
@@ -297,7 +393,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_geoscience",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Storm track",
+      "url": "https://en.wikipedia.org/wiki/Storm_track"
+    }
   },
   {
     "id": "curated-0026",
@@ -309,7 +409,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_geoscience",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Tropical cyclone",
+      "url": "https://en.wikipedia.org/wiki/Tropical_cyclone"
+    }
   },
   {
     "id": "curated-0027",
@@ -321,7 +425,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_geoscience",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "obscure"
+    "notoriety": "obscure",
+    "rabbitHole": {
+      "name": "Wikipedia - Earth's internal heat budget",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_internal_heat_budget"
+    }
   },
   {
     "id": "curated-0028",
@@ -333,7 +441,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_geoscience",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - El Nino-Southern Oscillation",
+      "url": "https://en.wikipedia.org/wiki/El_Ni%C3%B1o%E2%80%93Southern_Oscillation"
+    }
   },
   {
     "id": "curated-0029",
@@ -345,7 +457,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_chemistry",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Room-temperature superconductor",
+      "url": "https://en.wikipedia.org/wiki/Room-temperature_superconductor"
+    }
   },
   {
     "id": "curated-0030",
@@ -357,7 +473,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_chemistry",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "obscure"
+    "notoriety": "obscure",
+    "rabbitHole": {
+      "name": "Wikipedia - Superheavy element",
+      "url": "https://en.wikipedia.org/wiki/Superheavy_element"
+    }
   },
   {
     "id": "curated-0031",
@@ -369,7 +489,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_chemistry",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Lithium-air battery",
+      "url": "https://en.wikipedia.org/wiki/Lithium%E2%80%93air_battery"
+    }
   },
   {
     "id": "curated-0032",
@@ -381,7 +505,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_chemistry",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Homochirality",
+      "url": "https://en.wikipedia.org/wiki/Homochirality"
+    }
   },
   {
     "id": "curated-0033",
@@ -393,7 +521,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Gettier problem",
+      "url": "https://en.wikipedia.org/wiki/Gettier_problem"
+    }
   },
   {
     "id": "curated-0034",
@@ -405,7 +537,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Why there is anything at all",
+      "url": "https://en.wikipedia.org/wiki/Why_there_is_anything_at_all"
+    }
   },
   {
     "id": "curated-0035",
@@ -417,7 +553,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Mind-body problem",
+      "url": "https://en.wikipedia.org/wiki/Mind%E2%80%93body_problem"
+    }
   },
   {
     "id": "curated-0036",
@@ -429,7 +569,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Moral luck",
+      "url": "https://en.wikipedia.org/wiki/Moral_luck"
+    }
   },
   {
     "id": "curated-0037",
@@ -441,7 +585,11 @@
       "url": "https://en.wikipedia.org/wiki/Unsolved_problems_in_medicine",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Disease",
+      "url": "https://en.wikipedia.org/wiki/Disease"
+    }
   },
   {
     "id": "curated-0038",
@@ -453,7 +601,11 @@
       "url": "https://en.wikipedia.org/wiki/Unsolved_problems_in_medicine",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Evidence-based medicine",
+      "url": "https://en.wikipedia.org/wiki/Evidence-based_medicine"
+    }
   },
   {
     "id": "curated-0039",
@@ -465,7 +617,11 @@
       "url": "https://en.wikipedia.org/wiki/Unsolved_problems_in_medicine",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Psychiatric diagnosis",
+      "url": "https://en.wikipedia.org/wiki/Psychiatric_diagnosis"
+    }
   },
   {
     "id": "curated-0040",
@@ -477,7 +633,11 @@
       "url": "https://en.wikipedia.org/wiki/Unsolved_problems_in_medicine",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Classification of mental disorders",
+      "url": "https://en.wikipedia.org/wiki/Classification_of_mental_disorders"
+    }
   },
   {
     "id": "curated-0041",
@@ -489,7 +649,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_economics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Equity premium puzzle",
+      "url": "https://en.wikipedia.org/wiki/Equity_premium_puzzle"
+    }
   },
   {
     "id": "curated-0042",
@@ -501,7 +665,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_economics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Dividend puzzle",
+      "url": "https://en.wikipedia.org/wiki/Dividend_puzzle"
+    }
   },
   {
     "id": "curated-0043",
@@ -513,7 +681,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_economics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Behavioral economics",
+      "url": "https://en.wikipedia.org/wiki/Behavioral_economics"
+    }
   },
   {
     "id": "curated-0044",
@@ -525,7 +697,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_economics",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "obscure"
+    "notoriety": "obscure",
+    "rabbitHole": {
+      "name": "Wikipedia - Revealed preference",
+      "url": "https://en.wikipedia.org/wiki/Revealed_preference"
+    }
   },
   {
     "id": "curated-0045",
@@ -537,7 +713,11 @@
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "famous"
+    "notoriety": "famous",
+    "rabbitHole": {
+      "name": "Wikipedia - Chinese room",
+      "url": "https://en.wikipedia.org/wiki/Chinese_room"
+    }
   },
   {
     "id": "curated-0046",
@@ -549,6 +729,10 @@
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
       "license": "CC BY-SA 4.0"
     },
-    "notoriety": "known"
+    "notoriety": "known",
+    "rabbitHole": {
+      "name": "Wikipedia - Artificial consciousness",
+      "url": "https://en.wikipedia.org/wiki/Artificial_consciousness"
+    }
   }
 ]

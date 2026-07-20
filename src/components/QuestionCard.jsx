@@ -30,12 +30,12 @@ export default function QuestionCard({ question }) {
       </p>
       <a
         className="mt-9 inline-flex items-center gap-2 font-sans text-base text-[#67d7dc] underline decoration-[#67d7dc]/35 underline-offset-8 transition hover:text-[#a3edf0] focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#67d7dc] focus-visible:ring-offset-4 focus-visible:ring-offset-[#071b2d]"
-        href={question.source.url}
+        href={question.rabbitHole.url}
         rel="noreferrer"
         target="_blank"
       >
         Follow the rabbit hole <span aria-hidden="true">→</span>
-        <span className="sr-only"> at {question.source.name}</span>
+        <span className="sr-only"> at {question.rabbitHole.name}</span>
       </a>
       <p className="mt-7 font-serif text-sm text-[#8f9da5]">
         {question.source.name}
