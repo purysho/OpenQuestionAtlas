@@ -72,6 +72,28 @@ const styles = String.raw`
     background: rgba(3, 17, 30, .72);
     box-shadow: 0 0 0 3px rgba(103, 215, 220, .2), 0 1rem 3rem rgba(0, 8, 18, .28);
   }
+
+  .question-card {
+    position: relative;
+    border: 1px solid rgba(215, 203, 181, .38);
+    background: rgba(5, 24, 40, .68);
+    box-shadow: 0 1.75rem 5rem rgba(0, 8, 18, .2), inset 0 1px 0 rgba(255, 255, 255, .025);
+  }
+
+  .question-card::before,
+  .question-card::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 3.5rem;
+    height: 1px;
+    background: #d7cbb5;
+    opacity: .55;
+    transform: translateX(-50%);
+  }
+
+  .question-card::before { top: -1px; }
+  .question-card::after { bottom: -1px; }
 }
 `;
 

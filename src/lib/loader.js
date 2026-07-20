@@ -221,7 +221,8 @@ if (import.meta.vitest) {
   };
 
   async function readShippedData() {
-    const { readFile } = await import("node:fs/promises");
+    const nodeFsModule = "node:fs/promises";
+    const { readFile } = await import(/* @vite-ignore */ nodeFsModule);
     const schemaUrl = new URL("../../public/data/schema.json", import.meta.url);
     const datasetUrl = new URL("../../public/data/curated.json", import.meta.url);
     const [schemaText, datasetText] = await Promise.all([

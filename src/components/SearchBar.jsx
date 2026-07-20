@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SearchBar() {
+export default function SearchBar({ disabled = false, onChange, value }) {
   return (
     <label className="atlas-search flex items-center gap-4 px-5 py-4 sm:px-6 sm:py-5">
       <span className="sr-only">Search open questions</span>
@@ -15,9 +15,12 @@ export default function SearchBar() {
       </svg>
       <input
         className="min-w-0 flex-1 border-0 bg-transparent font-sans text-base text-[#f7f1e8] outline-none placeholder:text-[#8295a1] sm:text-lg"
+        disabled={disabled}
         name="search"
+        onChange={(event) => onChange(event.target.value)}
         placeholder="Search the unknown"
         type="search"
+        value={value}
       />
     </label>
   );
