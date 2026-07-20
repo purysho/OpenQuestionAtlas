@@ -86,8 +86,16 @@ export default function App() {
   }
 
   return (
-    <main className="atlas-shell px-5 sm:px-8">
-      <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col items-center pt-16 sm:pt-24 lg:pt-28">
+    <>
+      <a className="skip-link" href="#atlas-content">
+        Skip to the atlas
+      </a>
+      <main
+        className="atlas-shell px-5 sm:px-8"
+        id="atlas-content"
+        tabIndex={-1}
+      >
+        <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col items-center pt-16 sm:pt-24 lg:pt-28">
         <header className="w-full text-center">
           <h1 className="font-serif text-5xl font-normal leading-[0.96] tracking-[-0.035em] text-[#f0eadf] sm:text-6xl lg:text-[5.25rem]">
             The Open Questions Atlas
@@ -183,7 +191,8 @@ export default function App() {
         </section>
 
         <AttributionFooter />
-      </div>
-    </main>
+        </div>
+      </main>
+    </>
   );
 }

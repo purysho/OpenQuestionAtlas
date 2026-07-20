@@ -20,6 +20,23 @@ const styles = String.raw`
 }
 
 @layer components {
+  .skip-link {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 20;
+    border-radius: .35rem;
+    padding: .65rem .9rem;
+    background: #f0eadf;
+    color: #071b2d;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    transform: translateY(-200%);
+    transition: transform 150ms ease;
+  }
+
+  .skip-link:focus { transform: translateY(0); }
+
   .atlas-shell {
     min-height: 100vh;
     overflow: hidden;
@@ -175,7 +192,8 @@ const styles = String.raw`
   .question-settle { animation: none; }
   .field-chip,
   .surprise-button,
-  .atlas-search { transition: none; }
+  .atlas-search,
+  .skip-link { transition: none; }
 }
 `;
 
