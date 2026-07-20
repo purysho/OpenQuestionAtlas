@@ -156,6 +156,58 @@ const styles = String.raw`
 
   .surprise-button:disabled { cursor: wait; opacity: .48; }
 
+  .atlas-region,
+  .trail-card,
+  .related-question {
+    border: 1px solid rgba(181, 190, 190, .3);
+    background: rgba(5, 24, 40, .5);
+    transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+  }
+
+  .atlas-region {
+    min-height: 8.75rem;
+    padding: 1.2rem;
+    text-align: left;
+  }
+
+  .trail-card { padding: 1.35rem; }
+  .related-question {
+    padding: .9rem;
+    color: #c9d4d7;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: .82rem;
+    line-height: 1.45;
+    text-align: left;
+  }
+
+  .atlas-region:hover:not(:disabled),
+  .trail-card:hover,
+  .related-question:hover {
+    border-color: rgba(103, 215, 220, .75);
+    background: rgba(18, 68, 86, .5);
+    transform: translateY(-2px);
+  }
+
+  .atlas-region:focus-visible,
+  .trail-card:focus-visible,
+  .related-question:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(103, 215, 220, .25);
+  }
+
+  .atlas-region:disabled { cursor: not-allowed; opacity: .45; }
+
+  .question-tag {
+    border: 1px solid rgba(103, 215, 220, .35);
+    border-radius: 999px;
+    padding: .28rem .65rem;
+    color: #a3edf0;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: .7rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
   .question-card {
     position: relative;
     border: 1px solid rgba(215, 203, 181, .38);
@@ -194,6 +246,9 @@ const styles = String.raw`
   .surprise-button,
   .atlas-search,
   .skip-link { transition: none; }
+  .atlas-region,
+  .trail-card,
+  .related-question { transition: none; }
 }
 `;
 

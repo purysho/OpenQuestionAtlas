@@ -1,16 +1,21 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import AttributionFooter from "./components/AttributionFooter.jsx";
 import EmptyState from "./components/EmptyState.jsx";
+import FieldAtlas from "./components/FieldAtlas.jsx";
 import FieldChips from "./components/FieldChips.jsx";
 import QuestionCard from "./components/QuestionCard.jsx";
 import SearchBar from "./components/SearchBar.jsx";
 import SurpriseButton from "./components/SurpriseButton.jsx";
+import TrailPicker from "./components/TrailPicker.jsx";
 import {
+  fieldCounts,
   filterByFields,
   pickSurprise,
+  relatedQuestions,
   searchQuestions,
 } from "./lib/discovery.js";
 import { loadQuestions } from "./lib/loader.js";
+import { questionsForTrail, TRAILS } from "./lib/trails.js";
 
 export default function App() {
   const [questions, setQuestions] = useState([]);
@@ -19,6 +24,8 @@ export default function App() {
   const [selectedFields, setSelectedFields] = useState([]);
   const [surpriseQuestion, setSurpriseQuestion] = useState(null);
   const [surpriseVersion, setSurpriseVersion] = useState(0);
+  const [seenCount, setSeenCount] = useState(0);
+  const [activeTrail, setActiveTrail] = useState(null);
   const [loadState, setLoadState] = useState("loading");
   const seenQuestionIds = useRef(new Set());
 
@@ -54,13 +61,24 @@ export default function App() {
       ),
     [debouncedQuery, questions, selectedFields],
   );
+  const trailQuestions = useMemo(
+    () => (activeTrail ? questionsForTrail(questions, activeTrail) : null),
+    [activeTrail, questions],
+  );
+  const visibleQuestions = trailQuestions ?? results;
+  const counts = useMemo(() => fieldCounts(questions), [questions]);
+  const related = useMemo(
+    () => relatedQuestions(questions, surpriseQuestion),
+    [questions, surpriseQuestion],
+  );
 
   const searching = query !== debouncedQuery;
-  const hasActiveFilters = Boolean(query.trim() || selectedFields.length);
+  const hasActiveFilters = Boolean(query.trim() || selectedFields.length || activeTrail);
 
   function updateQuery(value) {
     setQuery(value);
     setSurpriseQuestion(null);
+    setActiveTrail(null);
   }
 
   function toggleField(field) {
@@ -70,19 +88,41 @@ export default function App() {
         : [...current, field],
     );
     setSurpriseQuestion(null);
+    setActiveTrail(null);
   }
 
   function showSurprise() {
-    const next = pickSurprise(results, seenQuestionIds.current);
+    const next = pickSurprise(visibleQuestions, seenQuestionIds.current);
     seenQuestionIds.current = next.seenIds;
+    setSeenCount(next.seenIds.size);
     setSurpriseQuestion(next.question);
     setSurpriseVersion((current) => current + 1);
+  }
+
+  function showQuestion(question) {
+    setSurpriseQuestion(question);
+    setSurpriseVersion((current) => current + 1);
+  }
+
+  function chooseField(field) {
+    setSelectedFields([field]);
+    setQuery("");
+    setActiveTrail(null);
+    setSurpriseQuestion(null);
+  }
+
+  function chooseTrail(trail) {
+    setActiveTrail(trail);
+    setQuery("");
+    setSelectedFields([]);
+    setSurpriseQuestion(null);
   }
 
   function clearDiscovery() {
     setQuery("");
     setSelectedFields([]);
     setSurpriseQuestion(null);
+    setActiveTrail(null);
   }
 
   return (
@@ -116,11 +156,12 @@ export default function App() {
           <div className="mt-7 flex justify-center">
             <SurpriseButton
               disabled={
-                loadState !== "ready" || searching || results.length === 0
+                loadState !== "ready" || searching || visibleQuestions.length === 0
               }
               onClick={showSurprise}
             />
           </div>
+          {seenCount ? <p className="mt-3 text-center font-sans text-xs text-[#8fa7b4]">{seenCount} question{seenCount === 1 ? "" : "s"} explored this session</p> : null}
         </div>
 
         <section
@@ -141,11 +182,8 @@ export default function App() {
           ) : null}
 
           {loadState === "ready" && !hasActiveFilters && !surpriseQuestion ? (
-            <div
-              aria-labelledby="welcome-title"
-              className="flex w-full max-w-3xl flex-col items-center border-y border-[#d7cbb5]/20 py-16 text-center sm:py-20"
-              role="region"
-            >
+            <div aria-labelledby="welcome-title" className="w-full max-w-4xl pb-16 text-center sm:pb-20" role="region">
+              <div className="border-y border-[#d7cbb5]/20 py-14 sm:py-16">
               <p className="font-sans text-xs uppercase tracking-[0.28em] text-[#67d7dc]">
                 A map of the unknown
               </p>
@@ -158,6 +196,9 @@ export default function App() {
               <p className="mt-6 max-w-xl font-sans text-base leading-7 text-[#b7c1c8] sm:text-lg">
                 Search the questions humanity has not answered yet.
               </p>
+              </div>
+              <FieldAtlas counts={counts} disabled={loadState !== "ready"} onSelect={chooseField} />
+              <TrailPicker onChoose={chooseTrail} trails={TRAILS} />
             </div>
           ) : null}
 
@@ -171,12 +212,15 @@ export default function App() {
                   className="question-settle"
                   key={surpriseVersion}
                 >
-                  <QuestionCard question={surpriseQuestion} />
+                  <QuestionCard onExplore={showQuestion} question={surpriseQuestion} related={related} />
                 </div>
-              ) : results.length ? (
-                results.map((question) => (
+              ) : visibleQuestions.length ? (
+                <>
+                  {activeTrail ? <p className="text-center font-sans text-xs uppercase tracking-[0.22em] text-[#67d7dc]">Trail: {activeTrail.title}</p> : null}
+                {visibleQuestions.map((question) => (
                   <QuestionCard key={question.id} question={question} />
-                ))
+                ))}
+                </>
               ) : (
                 <EmptyState onReset={clearDiscovery} />
               )}

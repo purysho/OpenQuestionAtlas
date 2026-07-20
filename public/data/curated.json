@@ -4,6 +4,7 @@
     "question": "How did life first arise on Earth?",
     "field": "biology",
     "description": "No proposed pathway yet explains the full transition from prebiotic chemistry to the first self-sustaining organisms.",
+    "tags": ["origins", "life"],
     "source": {
       "name": "Wikipedia — Unsolved problems in biology",
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
@@ -36,6 +37,7 @@
     "question": "How did the first eukaryotic cell originate?",
     "field": "biology",
     "description": "The sequence of symbiotic events that joined nuclei, mitochondria, and host cells remains unresolved.",
+    "tags": ["origins", "evolution"],
     "source": {
       "name": "Wikipedia — Unsolved problems in biology",
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_biology",
@@ -84,6 +86,7 @@
     "question": "What drives the accelerating expansion of the universe?",
     "field": "cosmology",
     "description": "Observations imply dark energy, but its physical nature and whether it changes over time remain unknown.",
+    "tags": ["universe", "time"],
     "source": {
       "name": "Wikipedia — Unsolved problems in astronomy",
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_astronomy",
@@ -180,6 +183,7 @@
     "question": "How can physics reconcile its two concepts of time?",
     "field": "physics",
     "description": "Quantum mechanics treats time as a fixed parameter while relativity makes it part of dynamic spacetime.",
+    "tags": ["time", "fundamentals"],
     "source": {
       "name": "Wikipedia — Unsolved problems in physics",
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics",
@@ -196,6 +200,7 @@
     "question": "What neural mechanisms produce subjective experience?",
     "field": "neuroscience",
     "description": "Brain activity correlates with awareness, but no account yet explains how it gives rise to lived experience.",
+    "tags": ["mind", "consciousness"],
     "source": {
       "name": "Wikipedia — Unsolved problems in neuroscience",
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
@@ -228,6 +233,7 @@
     "question": "Where are memories stored and how are they retrieved?",
     "field": "neuroscience",
     "description": "Multiple brain systems participate in memory, but the precise physical code and retrieval process remain unsettled.",
+    "tags": ["mind", "memory"],
     "source": {
       "name": "Wikipedia — Unsolved problems in neuroscience",
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
@@ -244,6 +250,7 @@
     "question": "What is the biological function of sleep?",
     "field": "neuroscience",
     "description": "Sleep is nearly universal and essential, but no single theory explains all of its restorative and adaptive roles.",
+    "tags": ["mind", "life"],
     "source": {
       "name": "Wikipedia — Unsolved problems in neuroscience",
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_neuroscience",
@@ -500,6 +507,7 @@
     "question": "Why do biomolecules overwhelmingly share one handedness?",
     "field": "chemistry",
     "description": "Life uses strongly preferred molecular chiralities, but their origin and necessity are still disputed.",
+    "tags": ["origins", "life"],
     "source": {
       "name": "Wikipedia — Unsolved problems in chemistry",
       "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_chemistry",
@@ -532,6 +540,7 @@
     "question": "Why is there something rather than nothing?",
     "field": "philosophy",
     "description": "Accounts of particular things do not settle why any universe, law, time, or possibility exists at all.",
+    "tags": ["origins", "universe"],
     "source": {
       "name": "Wikipedia — Philosophical problems",
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
@@ -548,6 +557,7 @@
     "question": "How are mind and body related?",
     "field": "philosophy",
     "description": "Neither dualist nor physicalist accounts have resolved how subjective mental states relate causally to physical processes.",
+    "tags": ["mind", "consciousness"],
     "source": {
       "name": "Wikipedia — Philosophical problems",
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
@@ -708,6 +718,7 @@
     "question": "Can an artificial intelligence possess genuine understanding?",
     "field": "ai",
     "description": "Fluent behavior can be produced by computation, but whether any system has intentionality or meaning remains contested.",
+    "tags": ["mind", "consciousness"],
     "source": {
       "name": "Wikipedia — Philosophical problems",
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
@@ -724,6 +735,7 @@
     "question": "How can we distinguish intelligent mimicry from machine sentience?",
     "field": "ai",
     "description": "Passing behavioral tests may demonstrate convincing imitation without revealing whether a machine has any inner experience.",
+    "tags": ["mind", "consciousness"],
     "source": {
       "name": "Wikipedia — Philosophical problems",
       "url": "https://en.wikipedia.org/wiki/List_of_philosophical_problems",
