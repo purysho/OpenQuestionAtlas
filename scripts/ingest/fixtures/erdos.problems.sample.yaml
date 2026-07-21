@@ -1,0 +1,160 @@
+# Fixture: verbatim excerpt of the Erdős Problems ground-truth database.
+#
+# Source (canonical, per the repo README):
+#   https://raw.githubusercontent.com/teorth/erdosproblems/main/data/problems.yaml
+# Repo:    https://github.com/teorth/erdosproblems   (License: Apache-2.0, confirmed)
+# Fetched: 2026-07-21 · full file: 1217 problems, 256 KB
+# This excerpt is the first 12 problems, byte-for-byte from the source.
+#
+# CONFIRMED FIELD NAMES (read from the source, NOT assumed):
+#   number      string   problem id, e.g. "1"           (quoted string, not int)
+#   prize       string   "$500" | "$1000" | ... | "no"  (money or the literal "no")
+#   status:                                              (nested object)
+#     state         string   "open" | "proved" | "disproved" | "verifiable" | ...
+#     last_update   string   ISO date "YYYY-MM-DD"
+#   oeis        string[] OEIS ids, e.g. ["A276661"] or ["N/A"]   (optional)
+#   formalized:                                          (nested object)
+#     state         string   "yes" | "no"
+#     last_update   string   ISO date
+#   tags        string[] free-text subject tags, e.g. ["number theory", "primes"]
+#   comments    string   OPTIONAL short label, e.g. "sunflower conjecture"
+#                        (present on only 65/1217; max ~48 chars; a name, not a statement)
+#
+# CRITICAL: the YAML carries NO problem statement / question / description / title.
+# It is an OEIS-linking metadata database. The prose statement of each problem
+# lives only on erdosproblems.com/<number>, which is NOT in this repo and is a
+# host the Atlas app loader does not approve. See ingest-2 report for the
+# implications for the erdos adapter (Tasks 3–4).
+#
+- number: "1"
+  prize: "$500"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["A276661"]
+  formalized:
+    state: "yes"
+    last_update: "2025-08-31"
+  tags: ["number theory", "additive combinatorics"]
+
+- number: "2"
+  prize: "$1000"
+  status:
+    state: "disproved"
+    last_update: "2025-08-31"
+  formalized:
+    state: "no"
+    last_update: "2025-08-31"
+  oeis: ["A160559"]
+  tags: ["number theory", "covering systems"]
+
+- number: "3"
+  prize: "$5000"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["A003002", "A003003", "A003004", "A003005"]
+  formalized:
+    state: "yes"
+    last_update: "2025-08-31"
+  tags: ["number theory", "additive combinatorics", "arithmetic progressions"]
+
+- number: "4"
+  prize: "$10000"
+  status:
+    state: "proved"
+    last_update: "2025-08-31"
+  tags: ["number theory", "primes"]
+  oeis: ["A002386"]
+  formalized:
+    state: "yes"
+    last_update: "2025-08-31"
+
+- number: "5"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["A001223"]
+  formalized:
+    state: "no"
+    last_update: "2025-08-31"
+  tags: ["number theory", "primes"]
+
+- number: "6"
+  prize: "$100"
+  status:
+    state: "proved"
+    last_update: "2025-08-31"
+  oeis: ["A335277"]
+  formalized:
+    state: "yes"
+    last_update: "2025-09-18"
+  tags: ["number theory", "primes"]
+
+- number: "7"
+  prize: "no"
+  status:
+    state: "verifiable"
+    last_update: "2025-08-31"
+  oeis: ["N/A"]
+  formalized:
+    state: "yes"
+    last_update: "2026-04-20"
+  tags: ["number theory", "covering systems"]
+
+- number: "8"
+  prize: "no"
+  status:
+    state: "disproved"
+    last_update: "2025-08-31"
+  oeis: ["N/A"]
+  formalized:
+    state: "no"
+    last_update: "2025-08-31"
+  tags: ["number theory", "covering systems"]
+
+- number: "9"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["A006286"]
+  formalized:
+    state: "yes"
+    last_update: "2025-08-31"
+  tags: ["number theory", "additive basis", "primes"]
+
+- number: "10"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["A387053"]
+  formalized:
+    state: "yes"
+    last_update: "2025-08-31"
+  tags: ["number theory", "additive basis", "primes"]
+
+- number: "11"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2026-03-14"
+  oeis: ["A001220", "A377587"]
+  formalized:
+    state: "yes"
+    last_update: "2025-08-31"
+  tags: ["number theory", "additive basis"]
+
+- number: "12"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["N/A"]
+  formalized:
+    state: "yes"
+    last_update: "2025-08-31"
+  tags: ["number theory"]
+
