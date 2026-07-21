@@ -22,6 +22,7 @@
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
+import ingestErdos from "./adapters/erdos.js";
 import { loadSchema, validateEntry } from "./lib/validate.js";
 
 const ROOT = new URL("../../", import.meta.url);
@@ -34,7 +35,17 @@ const CACHE_DIR = new URL("scripts/ingest/sources/", ROOT);
 // `run({ cacheDir })` returning a Question[]. Adding a source is: write one
 // adapter file, import it, and add one entry here. Nothing else changes.
 const ADAPTERS = [
-  // Registered in Task 3: erdos.
+  {
+    id: "erdos",
+    file: "erdos.json",
+    name: "Erdős Problems",
+    attribution:
+      "Adapted from the [Erdős Problems database](https://github.com/teorth/erdosproblems) " +
+      "(`data/problems.yaml`), licensed under Apache-2.0. Problem statements are " +
+      "independently phrased for the Atlas; each entry links to the source database " +
+      "and to an English Wikipedia article on the problem.",
+    run: ({ cacheDir }) => ingestErdos({ cacheDir }),
+  },
 ];
 
 function parseArgs(argv) {

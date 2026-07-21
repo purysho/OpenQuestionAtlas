@@ -1,0 +1,148 @@
+# Fixture: verbatim Erdős metadata for the 12 curated seed problems.
+# Extracted byte-for-byte from data/problems.yaml (teorth/erdosproblems, Apache-2.0).
+# Used by the erdos adapter's offline test so the number->metadata join
+# (prize -> notoriety, status, tags) runs deterministically without the network.
+
+- number: "20"
+  prize: "$1000"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["A332077"]
+  formalized:
+    state: "yes"
+    last_update: "2025-08-31"
+  comments: "sunflower conjecture"
+  tags: ["combinatorics"]
+
+- number: "107"
+  prize: "$500"
+  status:
+    state: "falsifiable"
+    last_update: "2025-08-31"
+  oeis: ["A000051"]
+  formalized:
+    state: "yes"
+    last_update: "2025-09-29"
+  comments: "'Happy Ending' problem"
+  tags: ["geometry", "convex"]
+
+- number: "242"
+  prize: "no"
+  status:
+    state: "falsifiable"
+    last_update: "2025-09-28"
+  oeis: ["A073101", "A075245", "A075246", "A075247", "A075248", "A287116"]
+  formalized:
+    state: "yes"
+    last_update: "2025-08-31"
+  comments: "Erdős-Straus conjecture"
+  tags: ["number theory", "unit fractions"]
+
+- number: "398"
+  prize: "no"
+  status:
+    state: "falsifiable"
+    last_update: "2025-08-31"
+  oeis: ["A146968", "A141399"]
+  formalized:
+    state: "yes"
+    last_update: "2025-09-01"
+  comments: "Brocard-Ramanujan conjecture"
+  tags: ["number theory", "factorials"]
+
+- number: "495"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["N/A"]
+  formalized:
+    state: "yes"
+    last_update: "2026-01-07"
+  comments: "Littlewood conjecture"
+  tags: ["diophantine approximation", "number theory"]
+
+- number: "507"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["N/A"]
+  formalized:
+    state: "yes"
+    last_update: "2026-02-10"
+  comments: "Heilbronn's triangle problem"
+  tags: ["geometry"]
+
+- number: "508"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["N/A"]
+  formalized:
+    state: "yes"
+    last_update: "2025-12-09"
+  comments: "Hadwiger-Nelson problem"
+  tags: ["geometry", "ramsey theory"]
+
+- number: "602"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["N/A"]
+  formalized:
+    state: "yes"
+    last_update: "2026-04-16"
+  comments: "Property B"
+  tags: ["combinatorics", "set theory"]
+
+- number: "849"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["A003016", "A003015", "A059233", "A098565", "A090162", "A180058", "A182237"]
+  formalized:
+    state: "yes"
+    last_update: "2025-12-17"
+  comments: "Singmaster's conjecture"
+  tags: ["number theory", "binomial coefficients"]
+
+- number: "952"
+  prize: "no"
+  status:
+    state: "open"
+    last_update: "2025-08-31"
+  oeis: ["N/A"]
+  formalized:
+    state: "yes"
+    last_update: "2025-11-21"
+  comments: "Gaussian moat problem"
+  tags: ["number theory"]
+
+- number: "1052"
+  prize: "$10"
+  status:
+    state: "open"
+    last_update: "2025-09-28"
+  formalized:
+    state: "yes"
+    last_update: "2025-10-10"
+  oeis: ["A002827"]
+  comments: "unitary perfect numbers"
+  tags: ["number theory"]
+
+- number: "1135"
+  prize: "$500"
+  status:
+    state: "open"
+    last_update: "2026-01-11"
+  formalized:
+    state: "yes"
+    last_update: "2026-01-13"
+  oeis: ["A006370", "A008908"]
+  comments: "Collatz conjecture"
+  tags: ["number theory"]
