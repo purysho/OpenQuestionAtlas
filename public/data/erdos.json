@@ -1,0 +1,237 @@
+[
+  {
+    "id": "erdos-0020",
+    "question": "Is there a constant c such that any family of more than c^k sets, each of size k, must contain three sets that form a sunflower — sets whose pairwise intersections are all identical?",
+    "field": "mathematics",
+    "description": "The Erdős–Rado sunflower lemma gives a k!·c^k bound; whether the exponential c^k bound conjectured by Erdős and Rado holds is still open despite recent near-resolutions.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Sunflower (mathematics)",
+      "url": "https://en.wikipedia.org/wiki/Sunflower_(mathematics)"
+    },
+    "notoriety": "famous",
+    "tags": [
+      "combinatorics"
+    ]
+  },
+  {
+    "id": "erdos-0107",
+    "question": "Does every set of 2^(n-2)+1 points in general position in the plane contain n points that form the vertices of a convex polygon?",
+    "field": "mathematics",
+    "description": "Erdős and Szekeres proved a finite threshold exists and conjectured the exact value 2^(n-2)+1, but the precise number of points forcing a convex n-gon remains unproven for general n.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Happy ending problem",
+      "url": "https://en.wikipedia.org/wiki/Happy_ending_problem"
+    },
+    "notoriety": "famous",
+    "tags": [
+      "geometry",
+      "convex"
+    ]
+  },
+  {
+    "id": "erdos-0242",
+    "question": "For every integer n greater than 1, can the fraction 4/n be written as a sum of three unit fractions 1/a + 1/b + 1/c with positive integers a, b, and c?",
+    "field": "mathematics",
+    "description": "The Erdős–Straus conjecture has been verified computationally to very large n, but no proof is known that such a three-term Egyptian-fraction representation of 4/n exists for all n.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Erdős–Straus conjecture",
+      "url": "https://en.wikipedia.org/wiki/Erdős–Straus_conjecture"
+    },
+    "notoriety": "known",
+    "tags": [
+      "number-theory",
+      "unit-fractions"
+    ]
+  },
+  {
+    "id": "erdos-0398",
+    "question": "Are n = 4, 5, and 7 the only integers for which n! + 1 is a perfect square?",
+    "field": "mathematics",
+    "description": "Brocard's problem asks whether n! + 1 = m² has any solution beyond the three known pairs; no further solutions are known and none has been proven to exist.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Brocard's problem",
+      "url": "https://en.wikipedia.org/wiki/Brocard's_problem"
+    },
+    "notoriety": "known",
+    "tags": [
+      "number-theory",
+      "factorials"
+    ]
+  },
+  {
+    "id": "erdos-0495",
+    "question": "For every pair of real numbers, does the product of q with the distances from qα and qβ to their nearest integers get arbitrarily close to zero as q ranges over the positive integers?",
+    "field": "mathematics",
+    "description": "Littlewood's conjecture in simultaneous Diophantine approximation is known to fail only on a set of exceptional pairs of measure zero, but the full statement is still open.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Littlewood conjecture",
+      "url": "https://en.wikipedia.org/wiki/Littlewood_conjecture"
+    },
+    "notoriety": "known",
+    "tags": [
+      "diophantine-approximation",
+      "number-theory"
+    ]
+  },
+  {
+    "id": "erdos-0507",
+    "question": "When n points are placed in a unit square, how large can the area of the smallest triangle formed by any three of them be made?",
+    "field": "mathematics",
+    "description": "The Heilbronn triangle problem asks for the exact growth rate of this largest-possible minimum triangle area; the gap between the best known upper and lower bounds is still open.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Heilbronn triangle problem",
+      "url": "https://en.wikipedia.org/wiki/Heilbronn_triangle_problem"
+    },
+    "notoriety": "known",
+    "tags": [
+      "geometry"
+    ]
+  },
+  {
+    "id": "erdos-0508",
+    "question": "How many colors are needed to color every point of the plane so that no two points exactly one unit apart share the same color?",
+    "field": "mathematics",
+    "description": "The chromatic number of the plane is known to be 5, 6, or 7 — the lower bound was raised to 5 in 2018 — but its exact value remains undetermined.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Hadwiger–Nelson problem",
+      "url": "https://en.wikipedia.org/wiki/Hadwiger–Nelson_problem"
+    },
+    "notoriety": "known",
+    "tags": [
+      "geometry",
+      "ramsey-theory"
+    ]
+  },
+  {
+    "id": "erdos-0602",
+    "question": "What is the least number of edges in an n-uniform hypergraph that cannot be two-colored without creating a monochromatic edge?",
+    "field": "mathematics",
+    "description": "Property B concerns two-colorability of set systems; the exact value of m(n), the fewest n-element sets forcing a monochromatic set, is unknown for n of 4 and above.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Property B",
+      "url": "https://en.wikipedia.org/wiki/Property_B"
+    },
+    "notoriety": "known",
+    "tags": [
+      "combinatorics",
+      "set-theory"
+    ]
+  },
+  {
+    "id": "erdos-0849",
+    "question": "Is there a finite upper bound on how many times any integer greater than 1 can appear in Pascal's triangle?",
+    "field": "mathematics",
+    "description": "Singmaster conjectured a constant bound on the multiplicity of entries in Pascal's triangle; no number other than 1 is known to appear more than eight times, but finiteness is unproven.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Singmaster's conjecture",
+      "url": "https://en.wikipedia.org/wiki/Singmaster's_conjecture"
+    },
+    "notoriety": "known",
+    "tags": [
+      "number-theory",
+      "binomial-coefficients"
+    ]
+  },
+  {
+    "id": "erdos-0952",
+    "question": "Is it possible to walk to infinity through the Gaussian primes using steps of bounded length?",
+    "field": "mathematics",
+    "description": "The Gaussian moat problem asks whether arbitrarily wide prime-free moats separate the Gaussian primes; whether a bounded-step walk to infinity exists is unknown.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Gaussian moat",
+      "url": "https://en.wikipedia.org/wiki/Gaussian_moat"
+    },
+    "notoriety": "known",
+    "tags": [
+      "number-theory"
+    ]
+  },
+  {
+    "id": "erdos-1052",
+    "question": "Are there only finitely many unitary perfect numbers — integers equal to the sum of their proper unitary divisors?",
+    "field": "mathematics",
+    "description": "Only five unitary perfect numbers are known; whether any further ones exist, or infinitely many do, is an open problem.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Unitary perfect number",
+      "url": "https://en.wikipedia.org/wiki/Unitary_perfect_number"
+    },
+    "notoriety": "famous",
+    "tags": [
+      "number-theory"
+    ]
+  },
+  {
+    "id": "erdos-1135",
+    "question": "Does repeatedly applying the rule 'halve it if even, otherwise triple it and add one' eventually reach 1 for every positive integer?",
+    "field": "mathematics",
+    "description": "The Collatz (3n+1) conjecture has been verified for enormous ranges of starting values, yet no proof exists that the process always terminates at 1.",
+    "source": {
+      "name": "Erdős Problems database (teorth/erdosproblems)",
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "license": "Apache-2.0"
+    },
+    "rabbitHole": {
+      "name": "Wikipedia — Collatz conjecture",
+      "url": "https://en.wikipedia.org/wiki/Collatz_conjecture"
+    },
+    "notoriety": "famous",
+    "tags": [
+      "number-theory"
+    ]
+  }
+]

@@ -5,6 +5,12 @@
       "file": "curated.json",
       "name": "Curated",
       "count": 46
+    },
+    {
+      "id": "erdos",
+      "file": "erdos.json",
+      "name": "Erdős Problems",
+      "count": 12
     }
   ]
 }

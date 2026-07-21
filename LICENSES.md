@@ -29,3 +29,11 @@ under the same license.
 
 Wikipedia is a trademark of the Wikimedia Foundation and is not affiliated with
 or endorsing this project.
+
+<!-- ingest:erdos:begin -->
+## Erdős Problems
+
+Imported by `npm run ingest -- --only erdos` into `public/data/erdos.json` (12 entries).
+
+Adapted from the [Erdős Problems database](https://github.com/teorth/erdosproblems) (`data/problems.yaml`), licensed under Apache-2.0. Problem statements are independently phrased for the Atlas; each entry links to the source database and to an English Wikipedia article on the problem.
+<!-- ingest:erdos:end -->
