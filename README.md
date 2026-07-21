@@ -54,12 +54,27 @@ why it remains open and a direct path into the source material.
 Every shipped question must be traceable. A smaller honest atlas is better than
 a larger one padded with invented questions, authors, or URLs.
 
+## Growing the atlas (Path B ingest)
+
+The manifest seam also lets a build-time pipeline add whole datasets from
+permitted external sources. `scripts/ingest/` fetches a source, reformats it
+into the schema, and writes static JSON to `public/data/` plus an updated
+`index.json` and `LICENSES.md`. The app is untouched — it just sees more files.
+
+Adding a source is: confirm its license, write one adapter, register it, and run
+`npm run ingest`. Full instructions, the adapter contract, and the rules
+(license gate, no fabrication, and the **Wikenigma link-don't-ingest / no-scrape**
+policy) are in [scripts/ingest/README.md](scripts/ingest/README.md). The
+Erdős Problems dataset is the worked example.
+
 ## Scripts
 
 - `npm run dev` starts Vite.
 - `npm test` runs the loader and discovery tests once.
 - `npm run lint` runs the repository's source/build validation gate.
 - `npm run build` creates the static production site in `dist/`.
+- `npm run ingest` runs the build-time ingest pipeline (see above); it is never
+  part of the app or the deploy.
 
 ## Contributing
 
