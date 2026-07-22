@@ -1,5 +1,6 @@
 import React from "react";
 import RelatedQuestions from "./RelatedQuestions.jsx";
+import { buildQuestionStarUrl } from "../lib/sendToSky.js";
 
 const FIELD_LABELS = {
   ai: "AI",
@@ -51,6 +52,18 @@ export default function QuestionCard({ question, related = [], onExplore }) {
       <p className="mt-7 font-serif text-sm text-[#8f9da5]">
         {question.source.name}{question.notoriety ? " · " + question.notoriety + " question" : ""}
       </p>
+      <div className="mt-8">
+        <button
+          type="button"
+          aria-label="Add this question to your Lodestar sky"
+          className="inline-flex items-center gap-2 rounded-full border border-[#67d7dc]/40 px-5 py-2.5 font-sans text-sm text-[#a3edf0] transition hover:border-[#67d7dc] hover:text-[#e8f7f8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#67d7dc] focus-visible:ring-offset-4 focus-visible:ring-offset-[#071b2d]"
+          onClick={() =>
+            globalThis.open(buildQuestionStarUrl(question), "_blank", "noopener")
+          }
+        >
+          Add to sky <span aria-hidden="true">✦</span>
+        </button>
+      </div>
       <a className="mt-5 inline-flex font-sans text-xs uppercase tracking-[0.16em] text-[#aab8c0] underline decoration-[#aab8c0]/35 underline-offset-4 hover:text-[#e8eceb]" href={shareUrl.toString()}>
         Share this question ↗
       </a>
