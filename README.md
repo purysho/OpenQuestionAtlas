@@ -19,6 +19,19 @@ Live site: [purysho.github.io/open-question-atlas](https://purysho.github.io/ope
 - **Question of the week** — begin with one carefully chosen open problem.
 - **Related questions** — keep following a line of inquiry without leaving the atlas.
 - **Shareable links** — every question and trail has a stable URL you can send to someone else.
+- **Add to sky** — every question card has an **Add to sky ✦** button that opens
+  [Lodestar](https://purysho.github.io/lodestar/) with the question pre-loaded as
+  a star (tagged `origin: "atlas"`), so a question that stayed with you lands in
+  your personal night sky.
+
+## The trilogy handoff
+
+The Atlas is a stateless discovery tool; [Lodestar](https://purysho.github.io/lodestar/)
+is the memory layer. **Add to sky** encodes the question into a small payload in
+the Lodestar URL hash (`…/lodestar/#/add?s=<encoded>`) — no backend, no shared
+storage, the URL is the whole wire. The shared payload + encoding contract lives
+in [`src/lib/starLink.js`](src/lib/starLink.js), copied verbatim from Lodestar
+and covered by a round-trip test so the sender and receiver never drift.
 
 Want to help grow the map? Open an issue with the **Add a sourced open question**
 template, or read [CONTRIBUTING.md](CONTRIBUTING.md).
