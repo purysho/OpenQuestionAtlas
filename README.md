@@ -6,7 +6,7 @@ The Open Questions Atlas turns open problems into a place to wander. Search by
 phrase, choose a region of the atlas, follow a curated trail, or choose
 **Surprise me** and let a non-repeating question find you.
 
-Live site: [purysho.github.io/open-question-atlas](https://purysho.github.io/open-question-atlas/)
+Live site: [purysho.github.io/OpenQuestionAtlas](https://purysho.github.io/OpenQuestionAtlas/)
 
 ## Interface preview
 
@@ -20,13 +20,13 @@ Live site: [purysho.github.io/open-question-atlas](https://purysho.github.io/ope
 - **Related questions** — keep following a line of inquiry without leaving the atlas.
 - **Shareable links** — every question and trail has a stable URL you can send to someone else.
 - **Add to sky** — every question card has an **Add to sky ✦** button that opens
-  [Lodestar](https://purysho.github.io/lodestar/) with the question pre-loaded as
+  [Lodestar](https://purysho.github.io/Lodestar/) with the question pre-loaded as
   a star (tagged `origin: "atlas"`), so a question that stayed with you lands in
   your personal night sky.
 
 ## The trilogy handoff
 
-The Atlas is a stateless discovery tool; [Lodestar](https://purysho.github.io/lodestar/)
+The Atlas is a stateless discovery tool; [Lodestar](https://purysho.github.io/Lodestar/)
 is the memory layer. **Add to sky** encodes the question into a small payload in
 the Lodestar URL hash (`…/lodestar/#/add?s=<encoded>`) — no backend, no shared
 storage, the URL is the whole wire. The shared payload + encoding contract lives

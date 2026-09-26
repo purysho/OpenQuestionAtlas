@@ -274,7 +274,7 @@ function licensesAssetPlugin() {
 
         if (
           pathname !== "/LICENSES.md" &&
-          pathname !== "/open-question-atlas/LICENSES.md"
+          pathname !== "/OpenQuestionAtlas/LICENSES.md"
         ) {
           next();
           return;
@@ -292,7 +292,7 @@ function licensesAssetPlugin() {
 }
 
 export default defineConfig({
-  base: "/open-question-atlas/",
+  base: "/OpenQuestionAtlas/",
   plugins: [
     {
       name: "atlas-tailwind-styles",

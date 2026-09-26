@@ -2,9 +2,9 @@
 // THE SHARED "STAR LINK" CONTRACT — v1   (Trilogy Wiring brief §4)
 //
 // FROZEN SPEC. This file is copied VERBATIM into all three trilogy repos:
-//   • purysho/lodestar              (receiver)
-//   • purysho/github-treasure-hunt  (sender, origin "treasure-hunt")
-//   • purysho/open-question-atlas   (sender, origin "atlas")
+//   • purysho/Lodestar              (receiver)
+//   • purysho/TreasureHunt          (sender, origin "treasure-hunt")
+//   • purysho/OpenQuestionAtlas      (sender, origin "atlas")
 //
 // Any drift between a sender's encode and Lodestar's decode silently breaks
 // the handoff. DO NOT edit one copy without changing all three.
@@ -15,7 +15,7 @@
 // a payload.
 //
 // Encoding : encodeURIComponent(JSON.stringify(payload))   (v1: simple, unicode-safe)
-// Wire     : https://purysho.github.io/lodestar/#/add?s=<encoded>
+// Wire     : https://purysho.github.io/Lodestar/#/add?s=<encoded>
 // ─────────────────────────────────────────────────────────────────────────
 
 export const STAR_LINK_VERSION = 1
@@ -24,7 +24,7 @@ export const STAR_LINK_VERSION = 1
 export const STAR_ORIGINS = Object.freeze(['treasure-hunt', 'atlas', 'manual'])
 
 // The single cross-app constant the senders hardcode (one named constant each).
-export const LODESTAR_ADD_URL = 'https://purysho.github.io/lodestar/#/add?s='
+export const LODESTAR_ADD_URL = 'https://purysho.github.io/Lodestar/#/add?s='
 
 // Size caps — guard against oversized/abusive payloads on both ends.
 export const STAR_LINK_LIMITS = Object.freeze({
